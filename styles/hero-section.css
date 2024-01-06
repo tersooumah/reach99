@@ -30,7 +30,7 @@
 }
 
 .hero-left-section{
-  max-width: 600px;
+  max-width: 500px;
   
 }
 
@@ -55,6 +55,14 @@
     color: white;
   
   }
+  
+  .hero-section-container{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  
+
+}
 
 
   
@@ -81,6 +89,14 @@
     color: white;
   
   }
+
+  .hero-section-container{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  
+
+}
   
 }
 
