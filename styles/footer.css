@@ -24,15 +24,14 @@
   color: white;
 }
 
-.links{
+.link{
   text-decoration: none;
   color: white;
+  margin-bottom: 30px;
   
 }
 
-.blog-link {
-  margin-bottom: 30px;
-}
+
 
 
 .contact-info {
@@ -71,7 +70,7 @@
     margin-bottom: 30px;
   }
 
-  .blog-link {
+  .link {
     margin-bottom: 10px;
   }
 
