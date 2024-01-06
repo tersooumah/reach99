@@ -75,6 +75,27 @@
 
 #check {display: none;}
 
+@media (max-width: 749px){
+
+  .nav-bar {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 20px;
+    background-color: white;
+    z-index: 500;
+  
+  }
+
+  
+
+}
+
 @media (max-width: 1119px) {
 
   .menu {
