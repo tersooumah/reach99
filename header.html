@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+
+    body {
+      height: 3000px;
+      background-color: green;
+    }
+
+
+    .logo img {height: 35px;}
+
+    .nav-bar {
+      /* width: 100%; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 60px;
+      background-color: white;
+
+    }
+
+    .menu {
+      display: flex;
+
+    }
+
+    .menu div {padding-left: 30px;}
+    .menu div a {
+      display: inline-block;
+      text-decoration: none;
+      font-family: Montserrat;
+      font-weight: 700;
+      color: gray;
+      text-align: center;
+      transition: 0.15s ease-in-out;
+      position: relative;
+
+    }
+
+    .menu div a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: gray;
+      transition: .15s ease-in-out;
+    }
+
+    .menu div a:hover:after {
+      width: 100%;
+    }
+
+    .open-menu , .close-menu {
+      position: absolute;
+      color: black;
+      cursor: pointer;
+      font-size: 1.5rem;
+      display: none;
+
+      
+
+    }
+
+    .close-menu {
+      color: white;
+    }
+
+    .open-menu {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%) ;
+    }
+    .close-menu{
+      top: 20px;
+      right: 20px;
+    }
+
+    #check {display: none;}
+
+    @media (max-width: 1119px) {
+
+      .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+
+      }
+
+      .menu div { margin-top: 40px;}
+
+      .menu div a {padding: 10px;
+      color: white;}
+
+      .open-menu , .close-menu {
+        display: block;
+      }
+      .menu div a::after {
+      background-color: white; 
+    }
+
+      #check:checked ~.menu {
+        right: 0;
+      }
+
+
+  
+    }
+
+
+
+    
+
+
+  </style>
+
+
+</head>
+<body>
+
+  <header>
+    <div>
+      <div class="nav-bar">
+        <div class="logo"><a href="/reach99/index.html"><img src="Images/logo-black.png" alt="logo"></a></div>
+        <input type="checkbox" id="check">
+        <div class="menu">
+          <div><a href="/reach99/index.html">Home</a></div>
+          <div><a href="/reach99/blogpage.html">Blog</a></div>
+          <div><a href="/reach99/pricing.html">Pricing</a></div>
+          <div><a href="/reach99/contactus.html">Contact Us</a></div>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </div>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </div>
+    </div>
+  </header>
+  
+</body>
+</html>
