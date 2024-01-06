@@ -22,19 +22,11 @@
   font-size: 17px;
   text-decoration: none;
   color: white;
-  margin-bottom: 30px;
-  
 }
 
-.link{
-  text-decoration: none;
-  color: white;
+.blog-link {
   margin-bottom: 30px;
-  
-  
 }
-
-
 
 
 .contact-info {
@@ -73,8 +65,8 @@
     margin-bottom: 30px;
   }
 
-  .link {
-    margin-bottom: 30px;
+  .blog-link {
+    margin-bottom: 10px;
   }
 
   .contact-info {
